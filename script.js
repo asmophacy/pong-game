@@ -6,6 +6,15 @@ const startButton = document.getElementById('start-button');
 const ballSpeedInput = document.getElementById('ball-speed');
 const lastScoreDiv = document.getElementById('last-score');
 
+const difficultySelect = document.getElementById('ai-difficulty');
+difficultySelect.addEventListener('change', () => {
+    localStorage.setItem('aiDifficulty', difficultySelect.value);
+});
+
+// Set initial difficulty selection based on localStorage
+const storedDifficulty = localStorage.getItem('aiDifficulty') || '4'; // Default to Medium
+difficultySelect.value = storedDifficulty;
+
 let playerPaddle = {
     x: 10,
     y: canvas.height / 2 - 50,
