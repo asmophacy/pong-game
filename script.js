@@ -62,7 +62,7 @@ function update() {
     playerPaddle.y += playerPaddle.dy;
 
     // AI Paddle Movement
-    const aiSpeed = 4;
+    const aiSpeed = 5;
     if (aiPaddle.y + aiPaddle.height / 2 < ball.y) {
         aiPaddle.y += aiSpeed;
     } else if (aiPaddle.y + aiPaddle.height / 2 > ball.y) {
