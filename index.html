@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmophacy's pong game</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="centered-text">
+<h1><span class="highlight">Asmophacy's</span><span class="title-text"> pong game</span></h1>
+        </div>
+        <div id="main-menu">
+            <h2>Main Menu</h2>
+        <p>pong game made by <span class="highlight">Asmophacy</span> hosted at
+            <a href="https://github.com/asmophacy/pong" target="_blank" rel="noopener noreferrer" style="text-decoration: none; vertical-align: middle;">
+                <span class="icon">
+                    <i class="fab fa-github"></i> Github
+                </span>
+            </a>
+        </p>
+        <div id="last-score"></div> <!-- To display score after game over -->
+        <div>
+            <canvas id="pongCanvas" width="600" height="400"></canvas>
+        </div>
+        <label for="ball-speed">Ball Speed:</label>
+        <input type="number" id="ball-speed" value="3" min="1" max="10">
+        <button id="start-button">Start Game</button>
+        <h1>About:</h1>
+        <p>You can control with wasd.</p>
+        <p>If you are on mobile rely on swiping with your fingers</p>
+        <p>directly send suggestion via discord that is on <a href="https://asmophacy.github.io/en/" class="links" target="_blank">My website</a></p>
+        <p>credits to:</p>
+        <p>-credit to <a href="https://deepmind.google/technologies/gemini/" class="links" target="_blank">Gemini </a> with some of the coding.</p>
+        <p>Thank you for checking my game out.</p>
+        </div>
+        <div class="centered-text">
+        <p>-Made with 🎀⋆𝓵𝓸𝓿𝓮⋆🎀 by <span class="highlight">Asmophacy</span>.</p>
+<p>© 2025 Asmophacy. All <a href="https://github.com/asmophacy/pong?tab=Apache-2.0-1-ov-file" class="links" target="_blank">rights</a>
+</div>
+    <script src="script.js"></script>
+    </body>
+    </html>
