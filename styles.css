@@ -88,21 +88,6 @@ body {
     display: none;
 }
 
-#start-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: var(--border-radius);
-    transition: var(--transition);
-}
-
-#start-button:hover {
-    background-color: var(--primary-dark);
-}
-
 canvas {
     border: 2px solid #000;
     display: block; /* Removes extra space below canvas */
